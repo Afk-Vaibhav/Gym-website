@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Reviews — Knockout Fitness Patna</title>
+  <meta name="description" content="Read genuine member reviews for Knockout Fitness, Rajendra Nagar, Patna. Rated 4.6/5 on Google with 32+ reviews." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23f5c518'/><text y='72' x='14' font-size='68' font-family='Arial Black' font-weight='900' fill='black'>KO</text></svg>" />
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 40px 0 0;
+    }
+    .filter-btn {
+      background: var(--charcoal);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: var(--font-head);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--yellow);
+      border-color: var(--yellow);
+      color: var(--black);
+    }
+    .write-review-box {
+      background: var(--charcoal);
+      border: 1px dashed rgba(245,197,24,0.3);
+      border-radius: var(--radius);
+      padding: 40px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .write-review-box h3 {
+      font-family: var(--font-head);
+      font-size: 28px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .write-review-box p {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .google-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--dark);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      padding: 14px 28px;
+      font-family: var(--font-head);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--white);
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .google-badge:hover {
+      border-color: var(--yellow);
+      transform: translateY(-3px);
+      color: var(--yellow);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">KO</div>
+      <div class="logo-text">
+        Knockout<span> Fitness</span>
+        <span class="logo-sub">Rajendra Nagar · Patna</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html" class="active">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Join Now</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" style="color:var(--yellow)">Join Now →</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="min-height:44vh; padding-top:var(--nav-h);">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=1800&q=80" alt="Members at Knockout Fitness" />
+    </div>
+    <div class="page-hero-content container">
+      <div class="hero-eyebrow">⭐ Google Verified</div>
+      <h1 class="hero-title">
+        Member<br><span style="color:var(--yellow)">Stories</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">4.6 Stars on Google</span>
+      <span class="ticker-item">32+ Reviews</span>
+      <span class="ticker-item">Safe for Women</span>
+      <span class="ticker-item">Expert Trainers</span>
+      <span class="ticker-item">Great Ambience</span>
+      <span class="ticker-item">Family Friendly</span>
+      <span class="ticker-item">4.6 Stars on Google</span>
+      <span class="ticker-item">32+ Reviews</span>
+      <span class="ticker-item">Safe for Women</span>
+      <span class="ticker-item">Expert Trainers</span>
+      <span class="ticker-item">Great Ambience</span>
+      <span class="ticker-item">Family Friendly</span>
+    </div>
+  </div>
+
+  <!-- ═══ RATING SUMMARY ═══ -->
+  <section class="section-sm rating-hero">
+    <div class="container">
+      <div class="rating-summary">
+        <div>
+          <div class="rating-big">4.6</div>
+          <div class="rating-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star half">★</span>
+          </div>
+          <div class="rating-count">Based on 32 Google reviews</div>
+        </div>
+        <div class="rating-bars">
+          <div class="rating-bar-row">
+            <span class="bar-label">5</span>
+            <div class="bar-track"><div class="bar-fill" data-width="75%" style="width:75%"></div></div>
+            <span class="bar-count">24</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="bar-label">4</span>
+            <div class="bar-track"><div class="bar-fill" data-width="9%" style="width:9%"></div></div>
+            <span class="bar-count">3</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="bar-label">3</span>
+            <div class="bar-track"><div class="bar-fill" data-width="3%" style="width:3%"></div></div>
+            <span class="bar-count">1</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="bar-label">2</span>
+            <div class="bar-track"><div class="bar-fill" data-width="3%" style="width:3%"></div></div>
+            <span class="bar-count">1</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="bar-label">1</span>
+            <div class="bar-track"><div class="bar-fill" data-width="9%" style="width:9%"></div></div>
+            <span class="bar-count">3</span>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="font-family:var(--font-head); font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--yellow); margin-bottom:4px;">Highlights</div>
+          <div style="font-size:14px; color:var(--off-white); display:flex; gap:8px; align-items:center;"><span style="color:var(--yellow);">✦</span> Safe for women & families</div>
+          <div style="font-size:14px; color:var(--off-white); display:flex; gap:8px; align-items:center;"><span style="color:var(--yellow);">✦</span> Expert, knowledgeable trainers</div>
+          <div style="font-size:14px; color:var(--off-white); display:flex; gap:8px; align-items:center;"><span style="color:var(--yellow);">✦</span> Great gym ambience</div>
+          <div style="font-size:14px; color:var(--off-white); display:flex; gap:8px; align-items:center;"><span style="color:var(--yellow);">✦</span> Comprehensive equipment</div>
+          <div style="font-size:14px; color:var(--off-white); display:flex; gap:8px; align-items:center;"><span style="color:var(--yellow);">✦</span> Zumba classes available</div>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Reviews</button>
+        <button class="filter-btn" data-filter="5">5 Stars</button>
+        <button class="filter-btn" data-filter="4">4 Stars</button>
+        <button class="filter-btn" data-filter="3">3 Stars</button>
+        <button class="filter-btn" data-filter="1">Critical</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ REVIEWS GRID ═══ -->
+  <section class="section" style="background:var(--black);">
+    <div class="container">
+      <div class="reviews-grid">
+
+        <!-- Review 1 — 5 stars -->
+        <div class="review-card reveal" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <div class="reviewer-name">Aditya Kumar</div>
+              <div class="reviewer-badge">Local Guide · 11 reviews · 35 photos</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"I am happy with this gym. Trainers here are expert and guide you very well and always explain how to keep workout and what we do or not. Peaceful environment. Most of the equipment are present here that help you to continue your workout."</p>
+          <div class="review-date">3 months ago</div>
+          <div class="review-response">
+            <div class="review-response-label">Owner Response</div>
+            <p class="review-response-text">Hi Aditya, thank you for sharing your thoughts! We're glad you're enjoying your time with us. 💪</p>
+          </div>
+        </div>
+
+        <!-- Review 2 — 5 stars -->
+        <div class="review-card reveal reveal-delay-1" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-avatar">M</div>
+            <div>
+              <div class="reviewer-name">Md Kaish</div>
+              <div class="reviewer-badge">2 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"I am very happy and impressed with this GYM. Very polite staff and excellent training facilities, highly recommend. Good place to work out."</p>
+          <div class="review-date">4 months ago</div>
+          <div class="review-response">
+            <div class="review-response-label">Owner Response</div>
+            <p class="review-response-text">Thanks a lot for your feedback! We look forward to continuing to serve you. 🙏</p>
+          </div>
+        </div>
+
+        <!-- Review 3 — 5 stars -->
+        <div class="review-card reveal reveal-delay-2" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <div class="reviewer-name">Aditya Singh</div>
+              <div class="reviewer-badge">Local Guide · 10 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"I saw a lot of negative reviews so I was skeptical at first, but I decided to give it a try and honestly the gym turned out to be much better than expected for the price. The biggest plus for me is the ambience — it's genuinely impressive."</p>
+          <div class="review-date">4 months ago</div>
+          <div class="review-response">
+            <div class="review-response-label">Owner Response</div>
+            <p class="review-response-text">Thanks so much for your reply Aditya, really appreciate it! 🙌</p>
+          </div>
+        </div>
+
+        <!-- Review 4 — 5 stars -->
+        <div class="review-card reveal" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-avatar">P</div>
+            <div>
+              <div class="reviewer-name">Priya Sharma</div>
+              <div class="reviewer-badge">5 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Safe for women, nice place to work out for family and friends! The Zumba classes are amazing. The trainers are attentive and the atmosphere is clean and motivating. Highly recommend this gym to anyone in Rajendra Nagar."</p>
+          <div class="review-date">5 months ago</div>
+        </div>
+
+        <!-- Review 5 — 4 stars -->
+        <div class="review-card reveal reveal-delay-1" data-rating="4">
+          <div class="review-header">
+            <div class="reviewer-avatar">R</div>
+            <div>
+              <div class="reviewer-name">Rahul Mishra</div>
+              <div class="reviewer-badge">8 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="opacity:0.3">★</span>
+          </div>
+          <p class="review-text">"Good gym overall. The equipment is well maintained and the trainers know their stuff. The location is convenient near Central Bank, Patliputra Path. Would be 5 stars if parking was easier."</p>
+          <div class="review-date">6 months ago</div>
+          <div class="review-response">
+            <div class="review-response-label">Owner Response</div>
+            <p class="review-response-text">Thank you Rahul! We appreciate the feedback on parking and are working on solutions. 🙏</p>
+          </div>
+        </div>
+
+        <!-- Review 6 — 5 stars -->
+        <div class="review-card reveal reveal-delay-2" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-avatar">S</div>
+            <div>
+              <div class="reviewer-name">Sneha Gupta</div>
+              <div class="reviewer-badge">Local Guide · 14 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"One of the best gyms I've been to in Patna. The trainers are genuinely caring and push you to your limits in a positive way. The Zumba sessions are a blast and the overall vibe is very energetic."</p>
+          <div class="review-date">6 months ago</div>
+        </div>
+
+        <!-- Review 7 — 5 stars -->
+        <div class="review-card reveal" data-rating="5">
+          <div class="review-header">
+            <div class="reviewer-avatar">V</div>
+            <div>
+              <div class="reviewer-name">Vikram Pandey</div>
+              <div class="reviewer-badge">3 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Joined 3 months ago and already seeing real results. The trainers actually explain what you're doing wrong and how to fix it. Very knowledgeable staff. Most of the equipment is present and well-maintained."</p>
+          <div class="review-date">7 months ago</div>
+        </div>
+
+        <!-- Review 8 — 3 stars -->
+        <div class="review-card reveal reveal-delay-1" data-rating="3">
+          <div class="review-header">
+            <div class="reviewer-avatar">K</div>
+            <div>
+              <div class="reviewer-name">Kunal Verma</div>
+              <div class="reviewer-badge">6 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="opacity:0.3">★</span><span class="star" style="opacity:0.3">★</span>
+          </div>
+          <p class="review-text">"The gym has good equipment and knowledgeable trainers. However, it can get crowded during peak evening hours. Would appreciate more space and possibly extended shift options."</p>
+          <div class="review-date">8 months ago</div>
+          <div class="review-response">
+            <div class="review-response-label">Owner Response</div>
+            <p class="review-response-text">Hi Kunal, we appreciate your honest feedback. We're looking at scheduling solutions to manage peak hour crowding. Thank you!</p>
+          </div>
+        </div>
+
+        <!-- Review 9 — 1 star (balanced transparency) -->
+        <div class="review-card reveal reveal-delay-2" data-rating="1" style="border-color:rgba(230,57,70,0.2);">
+          <div class="review-header">
+            <div class="reviewer-avatar" style="border-color:rgba(230,57,70,0.4); color:var(--danger);">N</div>
+            <div>
+              <div class="reviewer-name">Neeraj Kumar</div>
+              <div class="reviewer-badge">1 review</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star" style="color:var(--danger)">★</span><span class="star" style="opacity:0.2">★</span><span class="star" style="opacity:0.2">★</span><span class="star" style="opacity:0.2">★</span><span class="star" style="opacity:0.2">★</span>
+          </div>
+          <p class="review-text" style="color:rgba(255,255,255,0.55);">"Worst experience — premium price, cheap services. Expected much more for what they charge. Trainers seemed more interested in taking money than actually helping members."</p>
+          <div class="review-date">11 months ago</div>
+          <div class="review-response">
+            <div class="review-response-label">Owner Response</div>
+            <p class="review-response-text">We're sorry to hear about your experience. This doesn't reflect our standards. Please reach out to us directly at +91 70335 86466 so we can make this right.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Write a Review Box -->
+      <div class="write-review-box reveal">
+        <h3>Had a Great Experience?</h3>
+        <p>Share your story and help others find the right gym. Your review means everything to our community.</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="google-badge">
+          ⭐ Write a Google Review
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div class="container">
+      <div>
+        <h2 class="cta-title">Join the<br>Community.</h2>
+        <p class="cta-sub">Become part of Patna's most dedicated gym family</p>
+      </div>
+      <a href="contact.html" class="cta-btn">Start Today</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo">
+              <div class="logo-icon">KO</div>
+              <div class="logo-text">Knockout<span> Fitness</span><span class="logo-sub">Rajendra Nagar · Patna</span></div>
+            </div>
+            <p class="footer-tagline">Your transformation starts here. Expert training, premium equipment, and a community that pushes you forward.</p>
+            <div class="footer-socials">
+              <a href="#" class="social-btn">📸</a>
+              <a href="#" class="social-btn">👍</a>
+              <a href="#" class="social-btn">▶️</a>
+              <a href="tel:+917033586466" class="social-btn">📞</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="index.html">→ Home</a></li>
+              <li><a href="services.html">→ Services</a></li>
+              <li><a href="reviews.html">→ Reviews</a></li>
+              <li><a href="contact.html">→ Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">Programs</div>
+            <ul class="footer-links">
+              <li><a href="services.html">→ Strength Training</a></li>
+              <li><a href="services.html">→ Zumba Classes</a></li>
+              <li><a href="services.html">→ Personal Training</a></li>
+              <li><a href="services.html">→ Cardio Zone</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">Contact</div>
+            <div style="font-size:14px; color:var(--muted); line-height:1.8;">
+              <p>📍 1st Floor, Riddhi Siddhi Complex,<br>Patliputra Path, Rajendra Nagar,<br>Patna, Bihar 800016</p>
+              <p style="margin-top:12px;">📞 <a href="tel:+917033586466" style="color:var(--yellow)">+91 70335 86466</a></p>
+              <p>🕕 Mon–Sun: 6 AM – 10 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© 2025 <span>Knockout Fitness</span>. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" aria-label="Back to top">↑</button>
+  <script src="main.js"></script>
+</body>
+</html>

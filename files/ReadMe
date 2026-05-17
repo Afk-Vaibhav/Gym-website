@@ -1,0 +1,42 @@
+🏋️ Gym Website
+
+A modern and responsive gym website built to showcase fitness services, attract clients, and provide essential information about a gym business.
+
+🚀 Features:
+🏠 Home Page – Clean landing page with gym introduction and highlights
+💪 Services Page – Displays available fitness programs and training options
+🗣️ Reviews Page – Shows customer feedback and testimonials
+📞 Contact Page – Allows users to get in touch easily
+⚡ Interactive UI – JavaScript-powered interactions for better user experience
+📱 Responsive Design – Works on mobile, tablet, and desktop
+🛠️ Technologies Used
+
+HTML5 – Structure of the website
+CSS3 – Styling and layout
+JavaScript – Interactivity and dynamic behavior
+
+📂 Project Structure
+📁 Gym Website
+│── index.html        # Home page
+│── services.html     # Services page
+│── reviews.html      # Reviews page
+│── contact.html      # Contact page
+│── main.js           # JavaScript functionality
+🎯 Purpose
+
+This project was created as a client website for a gym business.
+It demonstrates the ability to build a multi-page responsive website with a clean UI and structured layout.
+
+🔧 How to Run
+1. Download or clone the repository
+2. Open index.html in your browser
+3. Navigate through different pages
+
+📌 Future Improvements
+1. Add backend for contact form
+2. Integrate booking or membership system
+3. Improve animations and UI effects
+4. Add SEO optimization
+👨‍💻 Author
+
+Developed by Vaibhav Raj

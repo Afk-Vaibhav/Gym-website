@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knockout Fitness — Premium Gym in Patna</title>
+  <meta name="description" content="Knockout Fitness — Patna's premier gym. Expert trainers, top equipment, and an electrifying atmosphere in Rajendra Nagar." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23f5c518'/><text y='72' x='14' font-size='68' font-family='Arial Black' font-weight='900' fill='black'>KO</text></svg>" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAV -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">KO</div>
+      <div class="logo-text">
+        Knockout<span> Fitness</span>
+        <span class="logo-sub">Rajendra Nagar · Patna</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Join Now</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" style="color:var(--yellow)">Join Now →</a>
+  </div>
+
+  <!-- ═══════════════════════════════ HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img
+        class="hero-bg-img"
+        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1800&q=80"
+        alt="Gym interior"
+      />
+    </div>
+    <div class="hero-noise"></div>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow">🥊 Patna's Premium Gym Experience</div>
+      <h1 class="hero-title">
+        Forge Your
+        <span class="accent">Strongest</span>
+        <span class="stroke">Self.</span>
+      </h1>
+      <p class="hero-desc">
+        Expert trainers. Professional equipment. An electrifying atmosphere that pushes you past your limits — every single session.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+        <a href="services.html" class="btn btn-outline">Explore Programs</a>
+      </div>
+    </div>
+
+    <!-- Rotating badge -->
+    <div class="hero-badge">
+      <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <path id="circle" d="M 70,70 m -50,0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"/>
+        </defs>
+        <circle cx="70" cy="70" r="60" fill="none" stroke="rgba(245,197,24,0.2)" stroke-width="1"/>
+        <circle cx="70" cy="70" r="48" fill="rgba(10,10,10,0.85)" stroke="var(--yellow)" stroke-width="2"/>
+        <text fill="var(--yellow)" font-size="11" font-family="Barlow Condensed,sans-serif" font-weight="800" letter-spacing="3">
+          <textPath href="#circle">★ KNOCKOUT FITNESS ★ PATNA ★ EST. 2020 ★ </textPath>
+        </text>
+        <text x="70" y="65" text-anchor="middle" fill="white" font-size="26" font-family="Barlow Condensed,sans-serif" font-weight="900">4.6</text>
+        <text x="70" y="82" text-anchor="middle" fill="var(--yellow)" font-size="10" font-family="Barlow Condensed,sans-serif" font-weight="700" letter-spacing="1">★★★★★</text>
+        <text x="70" y="96" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="Barlow,sans-serif">32 reviews</text>
+      </svg>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="hero-stats">
+      <div class="container">
+        <div class="stat-item">
+          <span class="stat-num" data-target="500" data-suffix="+">0+</span>
+          <div class="stat-label">Members Strong</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="10" data-suffix="+">0+</span>
+          <div class="stat-label">Expert Trainers</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5" data-suffix="+">0+</span>
+          <div class="stat-label">Years Running</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="4" data-suffix=".6★">0</span>
+          <div class="stat-label">Google Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">Strength Training</span>
+      <span class="ticker-item">Weight Loss</span>
+      <span class="ticker-item">Zumba Classes</span>
+      <span class="ticker-item">Personal Training</span>
+      <span class="ticker-item">Cardio Zone</span>
+      <span class="ticker-item">Family Friendly</span>
+      <span class="ticker-item">Expert Guidance</span>
+      <span class="ticker-item">Open 6AM–10PM</span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker-item">Strength Training</span>
+      <span class="ticker-item">Weight Loss</span>
+      <span class="ticker-item">Zumba Classes</span>
+      <span class="ticker-item">Personal Training</span>
+      <span class="ticker-item">Cardio Zone</span>
+      <span class="ticker-item">Family Friendly</span>
+      <span class="ticker-item">Expert Guidance</span>
+      <span class="ticker-item">Open 6AM–10PM</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ ABOUT -->
+  <section class="section about-strip">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media reveal">
+          <img
+            class="about-media-img"
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"
+            alt="Knockout Fitness gym floor"
+          />
+          <div class="about-media-badge">
+            <span class="big">4.6</span>
+            <span class="small">★ Google Rating</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label reveal">About Us</div>
+          <h2 class="section-title reveal reveal-delay-1">
+            More Than<br>A <span>Gym.</span>
+          </h2>
+          <div class="divider reveal reveal-delay-2"></div>
+          <p class="section-subtitle reveal reveal-delay-2">
+            Located in the heart of Rajendra Nagar, Patna, Knockout Fitness is a community-first gym where every member is treated like family. From beginners to seasoned athletes, we have the tools and expertise to get you results.
+          </p>
+          <ul class="about-list">
+            <li class="reveal reveal-delay-2">
+              <span class="check">✓</span>
+              <span>State-of-the-art equipment across a fully air-conditioned floor</span>
+            </li>
+            <li class="reveal reveal-delay-3">
+              <span class="check">✓</span>
+              <span>Certified expert trainers who explain every movement — no guesswork</span>
+            </li>
+            <li class="reveal reveal-delay-3">
+              <span class="check">✓</span>
+              <span>Safe and welcoming environment for women, families, and beginners</span>
+            </li>
+            <li class="reveal reveal-delay-4">
+              <span class="check">✓</span>
+              <span>Zumba, cardio, strength, and personal training all under one roof</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary reveal reveal-delay-4">Get Started Today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ WHY US -->
+  <section class="section" style="background:var(--black);">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:0;">
+        <div class="section-label reveal" style="justify-content:center;">Why Choose Us</div>
+        <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">
+          Built For <span>Champions</span>
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto; text-align:center;">
+          Everything you need to crush your goals — in one place.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <span class="feature-icon">🏋️</span>
+          <span class="feature-num">01</span>
+          <div class="feature-title">Premium Equipment</div>
+          <p class="feature-desc">Full range of machines, free weights, cable stations, and cardio equipment. Everything to support your full workout routine.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <span class="feature-icon">👨‍🏫</span>
+          <span class="feature-num">02</span>
+          <div class="feature-title">Expert Trainers</div>
+          <p class="feature-desc">Certified coaches who guide every rep, correct form, and build personalised plans that evolve as you grow stronger.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <span class="feature-icon">💃</span>
+          <span class="feature-num">03</span>
+          <div class="feature-title">Zumba & Classes</div>
+          <p class="feature-desc">High-energy group classes including Zumba, making fitness fun and social for all ages and fitness levels.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">🛡️</span>
+          <span class="feature-num">04</span>
+          <div class="feature-title">Safe for All</div>
+          <p class="feature-desc">A clean, safe, and inclusive environment — especially welcoming for women and families looking to build healthy habits.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <span class="feature-icon">🕕</span>
+          <span class="feature-num">05</span>
+          <div class="feature-title">Flexible Hours</div>
+          <p class="feature-desc">Open every day from 6 AM to 10 PM so your schedule never becomes an excuse. Morning grinders and evening warriors welcome.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <span class="feature-icon">📍</span>
+          <span class="feature-num">06</span>
+          <div class="feature-title">Prime Location</div>
+          <p class="feature-desc">1st Floor, Riddhi Siddhi Complex, near Central Bank — easily accessible from all of Rajendra Nagar and surrounding areas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ GALLERY STRIP -->
+  <div class="gallery-strip">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80" alt="Gym" />
+      <div class="gallery-item-overlay"><div class="gallery-plus">+</div></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80" alt="Weights" />
+      <div class="gallery-item-overlay"><div class="gallery-plus">+</div></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="Cardio" />
+      <div class="gallery-item-overlay"><div class="gallery-plus">+</div></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80" alt="Training" />
+      <div class="gallery-item-overlay"><div class="gallery-plus">+</div></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80" alt="Workout" />
+      <div class="gallery-item-overlay"><div class="gallery-plus">+</div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ TESTIMONIAL SNIPPET -->
+  <section class="section" style="background:var(--charcoal);">
+    <div class="container">
+      <div class="section-label reveal" style="justify-content:center;">Member Reviews</div>
+      <h2 class="section-title reveal reveal-delay-1" style="text-align:center; margin-bottom:48px;">
+        What Members <span>Say</span>
+      </h2>
+      <div class="reviews-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="review-card reveal">
+          <div class="review-header">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <div class="reviewer-name">Aditya Kumar</div>
+              <div class="reviewer-badge">Local Guide · 11 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Expert trainers who guide you very well and always explain what to do. Peaceful environment. Most of the equipment is present here to continue your workout."</p>
+          <div class="review-date">3 months ago</div>
+        </div>
+        <div class="review-card reveal reveal-delay-1">
+          <div class="review-header">
+            <div class="reviewer-avatar">M</div>
+            <div>
+              <div class="reviewer-name">Md Kaish</div>
+              <div class="reviewer-badge">2 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Very polite staff and excellent training facilities. Highly recommend. Good place to work out. One of the best gyms in Patna."</p>
+          <div class="review-date">4 months ago</div>
+        </div>
+        <div class="review-card reveal reveal-delay-2">
+          <div class="review-header">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <div class="reviewer-name">Aditya Singh</div>
+              <div class="reviewer-badge">Local Guide · 10 reviews</div>
+            </div>
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"I was skeptical at first but the gym turned out to be much better than expected for the price. The biggest plus for me is the incredible ambience."</p>
+          <div class="review-date">4 months ago</div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:40px;" class="reveal">
+        <a href="reviews.html" class="btn btn-ghost">Read All Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CTA BANNER -->
+  <div class="cta-banner">
+    <div class="container">
+      <div>
+        <h2 class="cta-title">Ready to Start<br>Your Journey?</h2>
+        <p class="cta-sub">Call us at <strong>+91 70335 86466</strong> or walk in today</p>
+      </div>
+      <a href="contact.html" class="cta-btn">Join Knockout Fitness</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ FOOTER -->
+  <footer>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo">
+              <div class="logo-icon">KO</div>
+              <div class="logo-text">
+                Knockout<span> Fitness</span>
+                <span class="logo-sub">Rajendra Nagar · Patna</span>
+              </div>
+            </div>
+            <p class="footer-tagline">Your transformation starts here. Expert training, premium equipment, and a community that pushes you forward.</p>
+            <div class="footer-socials">
+              <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+              <a href="#" class="social-btn" aria-label="Facebook">👍</a>
+              <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+              <a href="tel:+917033586466" class="social-btn" aria-label="Phone">📞</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="index.html">→ Home</a></li>
+              <li><a href="services.html">→ Services</a></li>
+              <li><a href="reviews.html">→ Reviews</a></li>
+              <li><a href="contact.html">→ Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">Programs</div>
+            <ul class="footer-links">
+              <li><a href="services.html">→ Strength Training</a></li>
+              <li><a href="services.html">→ Zumba Classes</a></li>
+              <li><a href="services.html">→ Personal Training</a></li>
+              <li><a href="services.html">→ Cardio Zone</a></li>
+              <li><a href="services.html">→ Weight Loss</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">Visit Us</div>
+            <div style="font-size:14px; color:var(--muted); line-height:2.1;">
+              <p>📍 1st Floor, Riddhi Siddhi Complex,<br>Patliputra Path, Rajendra Nagar,<br>Patna, Bihar 800016</p>
+              <p style="margin-top:14px;">📞 <a href="tel:+917033586466" style="color:var(--yellow); font-size:15px; font-weight:600;">+91 70335 86466</a></p>
+              <p style="margin-top:6px;">🕕 Mon–Sat: 6 AM – 10 PM</p>
+              <p>🕖 Sunday: 7 AM – 9 PM</p>
+            </div>
+            <a href="contact.html" class="btn btn-primary" style="margin-top:24px; padding:12px 28px; font-size:13px;">Join Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© 2025 <span>Knockout Fitness</span>. All rights reserved. Patna, Bihar.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
